@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validate</title>
+    <link rel="stylesheet" href="./FormValid.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Create Account</h2>
+      </div>
+      <form class="form" id="form">
+        <div class="form-control">
+          <label for="names">Username</label>
+          <input type="text" id="names" name="names" placeholder="Gowtham" />
+          <ion-icon name="checkmark-circle-outline" class="tickicon"></ion-icon>
+          <ion-icon name="alert-circle-outline" class="icon"></ion-icon>
+          <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="abc@gamil.com"
+          />
+          <ion-icon name="checkmark-circle-outline" class="tickicon"></ion-icon>
+          <ion-icon name="alert-circle-outline" class="icon"></ion-icon>
+          <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="password"
+          />
+          <ion-icon name="checkmark-circle-outline" class="tickicon"></ion-icon>
+          <ion-icon name="alert-circle-outline" class="icon"></ion-icon>
+          <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+          <label for="confpassword">Confpassword</label>
+          <input
+            type="password"
+            id="confpassword"
+            name="confpassword"
+            placeholder="confirm password"
+          />
+          <ion-icon name="checkmark-circle-outline" class="tickicon"></ion-icon>
+          <ion-icon name="alert-circle-outline" class="icon"></ion-icon>
+          <small>Error message</small>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <script src="./FormValid.js"></script>
+  </body>
+</html>
